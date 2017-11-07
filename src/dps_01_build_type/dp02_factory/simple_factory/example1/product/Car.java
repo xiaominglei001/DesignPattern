@@ -9,6 +9,6 @@ public interface Car {
   /**
    * 开车的动作
    */
-  public void drive();
+   void drive();
 
 }

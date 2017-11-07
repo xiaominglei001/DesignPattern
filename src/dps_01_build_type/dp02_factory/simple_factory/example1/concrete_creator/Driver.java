@@ -15,17 +15,17 @@ public class Driver {
 
   /**
    * 工厂方法.注意(返回类型为抽象产品角色)<br>
-   * @param s
+   * @param su
    * @return Car
    * @throws Exception
    */
-  public static Car driverCar(String s) throws Exception {
+  public static Car driverCar(String su) throws Exception {
     //判断逻辑，返回具体的产品角色给Client
-    if (s.equalsIgnoreCase("Benz"))
+    if (su.equalsIgnoreCase("Benz"))
       return new Benz();
-    else if (s.equalsIgnoreCase("Bmw"))
+    else if (su.equalsIgnoreCase("Bmw"))
       return new Bmw();
-    else if (s.equalsIgnoreCase("Audi"))
+    else if (su.equalsIgnoreCase("Audi"))
       return new Audi();
     else
       throw new Exception("Lawless car");
