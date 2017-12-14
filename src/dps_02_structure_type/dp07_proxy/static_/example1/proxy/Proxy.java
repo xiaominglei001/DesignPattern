@@ -18,6 +18,7 @@ public class Proxy implements Subject {
   /**
    * 代理发送请求
    */
+  @Override
   public void request() {
     if (realSubject == null) {
       realSubject = new RealSubject();

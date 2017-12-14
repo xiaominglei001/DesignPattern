@@ -33,7 +33,6 @@ public abstract class Subject {
 
   /**
    * 通知所有观察者<br>
-   * @param action
    */
   public void notify_() {
     for (Observer observer : observers) {

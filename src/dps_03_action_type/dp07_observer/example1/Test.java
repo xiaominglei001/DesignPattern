@@ -15,12 +15,12 @@ public class Test {
   public static void main(String[] args) {
     //主题（或可观察者）角色:前台
     ConcreteSubject subject = new ConcreteSubject();
-    subject.add(new ConcreteObserver(subject,"X"));
+    subject.add(new ConcreteObserver(subject,"X"));//添加三个观察者
     subject.add(new ConcreteObserver(subject,"Y"));
     subject.add(new ConcreteObserver(subject,"Z"));
     
-    subject.setSubjectState("ABC");
-    subject.notify_();
+    subject.setSubjectState("ABC");//改变被观察者的状态
+    subject.notify_();//通知观察者
   }
 
 }
