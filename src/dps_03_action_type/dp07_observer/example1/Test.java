@@ -20,7 +20,7 @@ public class Test {
     subject.add(new ConcreteObserver(subject,"Z"));
     
     subject.setSubjectState("ABC");//改变被观察者的状态
-    subject.notify_();//通知观察者
+    subject.notify_();//通知观察者.
   }
 
 }
