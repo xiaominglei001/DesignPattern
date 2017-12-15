@@ -27,8 +27,8 @@ public class Reader implements Observer {
    * @param o 
    * @param arg 
    */
-  public void update(@SuppressWarnings("unused")
-  Observable o, Object arg) {
+  @Override
+  public void update(@SuppressWarnings("unused") Observable o, Object arg) {
     String news = (String) arg;
     System.out.println(name + " : " + news);
   }

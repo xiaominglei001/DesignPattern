@@ -12,8 +12,12 @@
 因为复用是面向对象设计的要素之一，所以模式效果包括它对系统的灵活性、扩充性或可移植性的影响，显式地列出这些效果对理解和评价这些模式很有帮助。
 
 1.dps_01_build_type中是创建型模式(共6种)；
+①单例模式\②工厂模式(三种)\③建造模式\④Prototype(原型)模式
 2.dps_02_structure_type中是结构型模式(共7种) ；
+①Adapter(适配器)模式\②Bridge(桥梁)模式\③Composite(合成)模式\④Decorator(装饰)模式\⑤Facade(外观/门面)模式\⑥Flyweight(享元)模式\⑦Proxy(代理)模式
 3.dps_03_action_type中是行为模式(共11种)；
+①Chain of responsibility(责任链)模式\②Command(命令)模式\③Interpreter(解释)器模式\④Iterator(迭代子)模式\⑤Mediator(调停者)模式，又叫中介者模式\⑥Memento(备忘录)模式\
+⑦Observer(观察者)模式\⑧State(状态)模式\⑨Strategy(策略)模式\⑩Template method(模板方法)模式\⑾Visitor(访问者)模式
 4.你可能会数一下源代码里面一共有几种设计模式，表面上看只有22种，实际上关于工厂模式的三种代表都放在dps_01_build_type.dp02_factory
    包中，包括简单工厂，工厂方法，抽象工厂，这样算起来共有24种，但是，由于简单工厂模式违背开放-封闭原则，不建议使用，因此共有 24 - 1 = 23种，
    刚才与GOF提出的数字相吻合；
